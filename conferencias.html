@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conferencias de Gustavo 'Tata' Luna Orellano - Piloto, escritor y conferencista. Charlas sobre aviación, servicio, valores y el cielo.">
+  <title>Conferencias | El Cielo te Espera</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈</text></svg>">
+
+  <style>
+    /* =========================================
+       Galería de eventos - Imágenes más grandes
+       ========================================= */
+    .conference-gallery .carousel-item {
+      width: 500px;
+      height: 340px;
+      border-radius: 18px;
+    }
+    .conference-gallery .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .conference-gallery .carousel-track {
+      gap: 1.5rem;
+      animation: scrollGallery 35s linear infinite;
+    }
+    .conference-gallery .carousel-track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes scrollGallery {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 0.75rem)); }
+    }
+    @media (max-width: 768px) {
+      .conference-gallery .carousel-item {
+        width: 300px;
+        height: 210px;
+      }
+      .conference-gallery .carousel-track {
+        gap: 1rem;
+      }
+      @keyframes scrollGallery {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(calc(-50% - 0.5rem)); }
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="El Cielo te Espera" class="logo-img">
+        El Cielo <span>te Espera</span>
+      </a>
+      <button class="menu-toggle" aria-label="Menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autor.html">El Autor</a></li>
+        <li><a href="libros.html">Los Libros</a></li>
+        <li><a href="conferencias.html" class="active">Conferencias</a></li>
+        <li><a href="caridad.html">Caridad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="https://wa.me/5491165358978?text=Hola%20Tata,%20quiero%20consultar%20por%20una%20conferencia" class="nav-cta" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="conference-banner">
+    <img src="images/conferencias-banner.jpg" alt="Conferencias"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="conference-banner-placeholder" style="display:none;">
+      Banner · conferencias-banner.jpg
+    </div>
+    <div class="conference-banner-overlay">
+      <h1>Conferencias</h1>
+      <p>Charlas inspiradoras desde la cabina del alma</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div style="max-width:800px;margin:0 auto;text-align:center;color:var(--text-light);font-size:1.1rem;margin-bottom:2.5rem;">
+        <p style="margin-bottom:1.2rem;">
+          Gustavo “Tata” Luna Orellano comparte su experiencia como piloto de caza, acrobacia aérea y transporte de línea, 
+          y la convierte en mensajes de servicio, valores humanos y superación personal.
+        </p>
+        <p>
+          Ideal para empresas, colegios, clubes, ferias del libro, eventos de aviación y encuentros solidarios.
+        </p>
+      </div>
+
+      <div class="books-grid" style="margin-bottom:3rem;">
+        <div class="contact-card" style="text-align:left;">
+          <div class="icon" style="margin:0 0 1rem 0;">✈</div>
+          <h3>Temas principales</h3>
+          <ul style="list-style:none;color:var(--text-light);font-size:0.95rem;line-height:1.8;">
+            <li>• El servicio como camino a la felicidad y la paz</li>
+            <li>• Analogías entre la aviación y la vida cotidiana</li>
+            <li>• Trabajo en equipo y factores humanos (CRM)</li>
+            <li>• Superación, fe y valores perennes</li>
+            <li>• El cielo como metáfora de propósito</li>
+            <li>• Presentaciones de sus libros</li>
+          </ul>
+        </div>
+        <div class="contact-card" style="text-align:left;">
+          <div class="icon" style="margin:0 0 1rem 0;">🎤</div>
+          <h3>Formatos</h3>
+          <ul style="list-style:none;color:var(--text-light);font-size:0.95rem;line-height:1.8;">
+            <li>• Conferencias y charlas motivacionales</li>
+            <li>• Presentaciones de libros (Ferias del Libro)</li>
+            <li>• Charlas en empresas y colegios</li>
+            <li>• Encuentros solidarios y eventos de Lumen Cor</li>
+            <li>• Participaciones en radio y televisión</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL HORIZONTAL 6 IMÁGENES (MÁS GRANDES) -->
+  <section class="carousel-section conference-gallery">
+    <h2 class="carousel-title">Galería de eventos</h2>
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="images/conf-h1.jpg" alt="Conferencia 1"></div>
+        <div class="carousel-item"><img src="images/conf-h2.jpg" alt="Conferencia 2"></div>
+        <div class="carousel-item"><img src="images/conf-h3.jpg" alt="Conferencia 3"></div>
+        <div class="carousel-item"><img src="images/conf-h4.jpg" alt="Conferencia 4"></div>
+        <div class="carousel-item"><img src="images/conf-h5.jpg" alt="Conferencia 5"></div>
+        <div class="carousel-item"><img src="images/conf-h6.jpg" alt="Conferencia 6"></div>
+        <!-- Duplicados para loop -->
+        <div class="carousel-item"><img src="images/conf-h1.jpg" alt="Conferencia 1"></div>
+        <div class="carousel-item"><img src="images/conf-h2.jpg" alt="Conferencia 2"></div>
+        <div class="carousel-item"><img src="images/conf-h3.jpg" alt="Conferencia 3"></div>
+        <div class="carousel-item"><img src="images/conf-h4.jpg" alt="Conferencia 4"></div>
+        <div class="carousel-item"><img src="images/conf-h5.jpg" alt="Conferencia 5"></div>
+        <div class="carousel-item"><img src="images/conf-h6.jpg" alt="Conferencia 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="background:var(--pale-sky);border-radius:var(--radius);padding:2.5rem;text-align:center;">
+        <h3 style="color:var(--navy);margin-bottom:1rem;">¿Querés invitar al Tata a tu evento?</h3>
+        <p style="color:var(--text-light);margin-bottom:1.5rem;max-width:500px;margin-left:auto;margin-right:auto;">
+          Escribime por WhatsApp o email y coordinamos fecha, formato y lugar.
+        </p>
+        <div class="hero-buttons" style="justify-content:center;">
+          <a href="https://wa.me/5491165358978?text=Hola%20Tata,%20quiero%20consultar%20por%20una%20conferencia%20o%20charla" 
+             class="btn btn-whatsapp" target="_blank" rel="noopener">
+            💬 Consultar por WhatsApp
+          </a>
+          <a href="mailto:elcieloteespera@gmail.com?subject=Consulta%20por%20conferencia" class="btn btn-primary">
+            ✉ Enviar email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>El Cielo te Espera</h4>
+        <p>Proyecto de Gustavo “Tata” Luna Orellano.<br>Piloto · Escritor · Servidor.</p>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <a href="autor.html">El Autor</a>
+        <a href="libros.html">Los Libros</a>
+        <a href="conferencias.html">Conferencias</a>
+        <a href="caridad.html">Caridad</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5491165358978" target="_blank" rel="noopener">WhatsApp: +54 9 11 6535-8978</a>
+        <a href="mailto:elcieloteespera@gmail.com">elcieloteespera@gmail.com</a>
+        <a href="https://instagram.com/elcieloteespera_" target="_blank" rel="noopener">@elcieloteespera_</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Gustavo Luna Orellano · El Cielo te Espera · Todos los derechos reservados
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
